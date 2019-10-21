@@ -1,7 +1,7 @@
 {
   "author": "Jorge Garza <jgarzagu@ucsd.edu>",
   "name": "ioctl-napi",
-  "version": "0.1.0",
+  "version": "0.2.5",
   "description": "napi ioctl",
   "main": "ioctl.js",
   "dependencies": {
@@ -9,16 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NVSL/Linuxduino/tree/master/npm"
+    "url": "https://github.com/Guardado/ioctl-napi/tree/master#ioctl-napi"
   },
-  "bugs": "https://github.com/NVSL/Linuxduino/issues",
+  "bugs": "https://github.com/Guardado/ioctl-napi/issues",
   "scripts": {
     "test": "node example.js"
   },
+  "keywords": [ "ioctl", "napi"],
   "files": [
-    "ioctl.js",
     "binding.gyp",
     "ioctl.cc",
+    "ioctl.js",
     "example.js"
   ],
   "gypfile": true
