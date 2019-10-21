@@ -16,10 +16,10 @@ var fs = require("fs");
 var ioctl = require("ioctl-napi");
 
 try {
-	var fd = fs.openSync("/dev/ttyUSB0", fs.constants.O_RDWR);
+  var fd = fs.openSync("/dev/ttyUSB0", fs.constants.O_RDWR);
 } catch (e) {
-	console.log("Error opening Serial:", e);
-	return;
+  console.log("Error opening Serial:", e);
+  return;
 }
 console.log("Success opening serial!!");
 
@@ -38,10 +38,10 @@ var TCGETS = 0x5401;
 var termios = Buffer.alloc(57);
 
 try {
-	var ret = ioctl(fd, TCGETS, termios);
+  var ret = ioctl(fd, TCGETS, termios);
 } catch (e) {
-	console.log("ioctl error: ", e);
-	return;
+  console.log("ioctl error: ", e);
+  return;
 }
 
 console.log("termios buffer:", termios);
