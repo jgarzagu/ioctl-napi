@@ -1,7 +1,7 @@
 {
   "author": "Jorge Garza <jgarzagu@ucsd.edu>",
   "name": "ioctl-napi",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "napi ioctl",
   "main": "ioctl.js",
   "dependencies": {
@@ -15,7 +15,10 @@
   "scripts": {
     "test": "node example.js"
   },
-  "keywords": [ "ioctl", "napi"],
+  "keywords": [
+    "ioctl",
+    "napi"
+  ],
   "files": [
     "binding.gyp",
     "ioctl.cc",
